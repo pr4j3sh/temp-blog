@@ -80,3 +80,50 @@
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  @apply text-5xl font-black;
+}
+h2 {
+  @apply text-4xl font-extrabold;
+}
+h3 {
+  @apply text-3xl font-bold;
+}
+h4 {
+  @apply text-2xl font-semibold;
+}
+h5 {
+  @apply text-xl font-semibold;
+}
+h6 {
+  @apply text-lg font-semibold;
+}
+
+.container {
+  @apply max-w-xl m-auto px-2 md:px-0 my-4 flex;
+}
+
+pre {
+  @apply border p-2 rounded-md my-2 overflow-auto text-sm;
+}
+
+blockquote {
+  @apply border-l-4 pl-2;
+}
+
+code {
+  @apply text-sm p-0.5 rounded-md;
+}
+
+a {
+  @apply underline;
+}
+
+ul {
+  @apply list-disc ml-4;
+}
+
+li {
+  @apply ml-2;
+}

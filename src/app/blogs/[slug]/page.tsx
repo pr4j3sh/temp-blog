@@ -15,12 +15,12 @@ const BlogLayout = ({ params }: { params: { slug: string } }) => {
   if (!blog) throw new Error(`Blog not found for slug: ${params.slug}`);
 
   return (
-    <article className="mx-auto max-w-xl py-8">
-      <div className="mb-8 text-center">
-        <time dateTime={blog.date} className="mb-1 text-xs text-gray-600">
+    <article className="container flex-col gap-4">
+      <div className="mb-8 flex flex-col gap-1">
+        <time dateTime={blog.date} className="text-xs text-gray-600">
           {format(parseISO(blog.date), "LLLL d, yyyy")}
         </time>
-        <h1 className="text-3xl font-bold">{blog.title}</h1>
+        <h1>{blog.title}</h1>
         <p>{blog.description}</p>
       </div>
       <div
