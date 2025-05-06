@@ -1,0 +1,39 @@
+# Heading 1
+
+> 7 May 2024
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+This is some **bold**, _italic_ and `inline code`.
+
+This is a list in markdown:
+
+- Item One
+- Item Two
+  - Subitem
+    - Sub-subitem
+- Item Three
+
+```js
+// JavaScript code block
+const num = 9;
+console.log(num);
+```
+
+> This is a blockquote.
+
+[Link text](https://example.com)
+
+![Image alt text](https://avatars.githubusercontent.com/u/75523737?v=4)
+
+---
+
+> **Tip:** You can combine _styles_ like **_bold italics_**.
