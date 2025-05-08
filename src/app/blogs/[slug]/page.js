@@ -6,7 +6,7 @@ export default async function Page({ params }) {
   const { default: Blog } = await import(`@/blogs/${slug}.md`);
 
   return (
-    <section>
+    <main>
       <Link href="/blogs" className="btns">
         <button className="icon">
           <svg
@@ -24,7 +24,7 @@ export default async function Page({ params }) {
         <span>Back</span>
       </Link>
       <Blog />
-    </section>
+    </main>
   );
 }
 

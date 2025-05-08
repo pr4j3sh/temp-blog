@@ -4,7 +4,7 @@ import { getBlogs } from "@/lib/utils";
 export default async function Page() {
   const blogs = await getBlogs();
   return (
-    <section>
+    <main>
       <b>Recent blogs</b>
       <section>
         {blogs.length > 0 ? (
@@ -15,6 +15,6 @@ export default async function Page() {
           <p>No blogs to show.</p>
         )}
       </section>
-    </section>
+    </main>
   );
 }
