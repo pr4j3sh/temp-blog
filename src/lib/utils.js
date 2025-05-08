@@ -7,7 +7,7 @@ export async function getBlogs() {
   const blogs = files
     .map((f) => {
       const slug = f.split(".")[0];
-      const [title, date] = slug.split("_");
+      const [date, title] = slug.split("_");
       const cleanTitle = title
         .split("-")
         .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
